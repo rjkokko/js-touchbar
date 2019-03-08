@@ -1,6 +1,6 @@
 {
-  "name": "js-touch",
-  "displayName": "js-touch",
+  "name": "js-touchbar",
+  "displayName": "js-touchbar",
   "description": "Add {, }, // and | to the MacBook Pro Touch Bar.",
   "version": "0.0.1",
   "engines": {
@@ -17,57 +17,57 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:js-touch.{",
-    "onCommand:js-touch.}",
-    "onCommand:js-touch.\\",
-    "onCommand:js-touch.|"
+    "onCommand:js-touchbar.{",
+    "onCommand:js-touchbar.}",
+    "onCommand:js-touchbar.\\",
+    "onCommand:js-touchbar.|"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "js-touch.{",
+        "command": "js-touchbar.{",
         "title": "{"
       },
       {
-        "command": "js-touch.}",
+        "command": "js-touchbar.}",
         "title": "}"
       },
       {
-        "command": "js-touch.\\",
+        "command": "js-touchbar.\\",
         "title": "\\"
       },
       {
-        "command": "js-touch.|",
+        "command": "js-touchbar.|",
         "title": "|"
       }
     ],
     "menus": {
       "touchBar": [
         {
-          "command": "js-touch.{",
+          "command": "js-touchbar.{",
           "when": "inputFocus"
         },
         {
-          "command": "js-touch.}",
+          "command": "js-touchbar.}",
           "when": "inputFocus"
         },
         {
-          "command": "js-touch.\\",
+          "command": "js-touchbar.\\",
           "when": "inputFocus"
         },
         {
-          "command": "js-touch.|",
+          "command": "js-touchbar.|",
           "when": "inputFocus"
         }
       ]
     },
     "configuration": [
       {
-        "title": "js-touch",
+        "title": "js-touchbar",
         "type": "object",
         "properties": {
-          "js-touch.enabled": {
+          "js-touchbar.enabled": {
             "type": "boolean",
             "default": true,
             "description": "enabled"

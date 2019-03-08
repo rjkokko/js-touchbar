@@ -19,15 +19,18 @@ function insertTextIntoDocument(text: string): boolean {
 }
 
 function registerCommand(context: vscode.ExtensionContext, char: string) {
-  let disposable = vscode.commands.registerCommand(`js-touch.${char}`, () => {
-    // The code you place here will be executed every time your command is executed
+  let disposable = vscode.commands.registerCommand(
+    `js-touchbar.${char}`,
+    () => {
+      // The code you place here will be executed every time your command is executed
 
-    let editor = vscode.window.activeTextEditor;
-    if (!editor) {
-      return; // No open text editor
+      let editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        return; // No open text editor
+      }
+      insertTextIntoDocument(char);
     }
-    insertTextIntoDocument(char);
-  });
+  );
 
   context.subscriptions.push(disposable);
 }
