@@ -1,10 +1,10 @@
-# js-touchbar README
+# js-touchbar
 
-Add {, }, \ and | to you MacBook Touch Bar.
+Adds {, }, \ and | to you MacBook Touch Bar.
 
 ## Features
 
-Add the characters that need finger acrobatics on non-english keyboards to the Touch Bar.
+Add to the Touch Bar the JavaScript symbols that need finger acrobatics on non-English keyboards.
 
 ## Requirements
 

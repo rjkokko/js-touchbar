@@ -31,19 +31,19 @@
     "commands": [
       {
         "command": "js-touchbar.{",
-        "title": "{"
+        "title": "\t{\t"
       },
       {
         "command": "js-touchbar.}",
-        "title": "}"
+        "title": "\t}\t"
       },
       {
         "command": "js-touchbar.\\",
-        "title": "\\"
+        "title": "\t\\\t"
       },
       {
         "command": "js-touchbar.|",
-        "title": "|"
+        "title": "\t|\t "
       }
     ],
     "menus": {
