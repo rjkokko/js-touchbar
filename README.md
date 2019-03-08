@@ -1,5 +1,7 @@
 # js-touchbar
 
+![TouchBar](./TouchBarShot.png)
+
 Adds {, }, \ and | to you MacBook Touch Bar.
 
 ## Features
