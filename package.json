@@ -1,38 +1,93 @@
 {
-	"name": "js-touch",
-	"displayName": "js-touch",
-	"description": "Add characters needed to write JavaScript to the MacBook touch bar.",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.32.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	}
+  "name": "js-touch",
+  "displayName": "js-touch",
+  "description": "Add {, }, // and | to the MacBook Pro Touch Bar.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "keywords": [
+    "Macbook Pro Touch Bar",
+    "Touchbar",
+    "touchbar",
+    "Macbook",
+    "Keyboard"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:js-touch.{",
+    "onCommand:js-touch.}",
+    "onCommand:js-touch.\\",
+    "onCommand:js-touch.|"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "js-touch.{",
+        "title": "{"
+      },
+      {
+        "command": "js-touch.}",
+        "title": "}"
+      },
+      {
+        "command": "js-touch.\\",
+        "title": "\\"
+      },
+      {
+        "command": "js-touch.|",
+        "title": "|"
+      }
+    ],
+    "menus": {
+      "touchBar": [
+        {
+          "command": "js-touch.{",
+          "when": "inputFocus"
+        },
+        {
+          "command": "js-touch.}",
+          "when": "inputFocus"
+        },
+        {
+          "command": "js-touch.\\",
+          "when": "inputFocus"
+        },
+        {
+          "command": "js-touch.|",
+          "when": "inputFocus"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "js-touch",
+        "type": "object",
+        "properties": {
+          "js-touch.enabled": {
+            "type": "boolean",
+            "default": true,
+            "description": "enabled"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "tslint": "^5.12.1",
+    "@types/node": "^10.12.21",
+    "@types/mocha": "^2.2.42"
+  }
 }
