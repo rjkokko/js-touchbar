@@ -4,11 +4,11 @@ Add {, }, \ and | to you MacBook Touch Bar.
 
 ## Features
 
-Add the characters that need finger acrobatics to touch bar
+Add the characters that need finger acrobatics on non-english keyboards to the Touch Bar.
 
 ## Requirements
 
-MacBook Pro Touch Bar is reguired. 😎
+MacBook Pro Touch Bar is required. 😎
 
 ### 0.0.1
 
