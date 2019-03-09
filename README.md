@@ -2,11 +2,11 @@
 
 ![TouchBar](./TouchBarShot.png)
 
-VS Code extension that adds {, }, | and \$ to you MacBook Pro Touch Bar.
+VS Code Touch Bar extension adding JavaScript symbols that need finger acrobatics on non-English keyboards.
 
 ## Features
 
-Add to the Touch Bar the JavaScript symbols that need finger acrobatics on non-English keyboards.
+Adds {, }, | and \$ to you MacBook Pro Touch Bar.
 
 ## Requirements
 
