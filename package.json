@@ -39,8 +39,8 @@
         "title": "\t}\t"
       },
       {
-        "command": "js-touchbar.\\",
-        "title": "\t\\\t"
+        "command": "js-touchbar.$",
+        "title": "\t$\t"
       },
       {
         "command": "js-touchbar.|",
@@ -50,7 +50,7 @@
     "menus": {
       "touchBar": [
         {
-          "command": "js-touchbar.\\",
+          "command": "js-touchbar.$",
           "when": "inputFocus",
           "group": "js-touchbar@1"
         },

@@ -2,7 +2,7 @@
 
 ![TouchBar](./TouchBarShot.png)
 
-VS Code extension that adds {, }, \ and | to you MacBook Pro Touch Bar.
+VS Code extension that adds {, }, | and \$ to you MacBook Pro Touch Bar.
 
 ## Features
 

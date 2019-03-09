@@ -40,7 +40,7 @@ function registerCommand(context: vscode.ExtensionContext, char: string) {
 export function activate(context: vscode.ExtensionContext) {
   registerCommand(context, "{");
   registerCommand(context, "}");
-  registerCommand(context, "\\");
+  registerCommand(context, "$");
   registerCommand(context, "|");
 }
 
