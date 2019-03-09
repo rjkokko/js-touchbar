@@ -2,12 +2,9 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 
-function insertTextIntoDocument(text: string): boolean {
+function insertTextIntoEditor(text: string): boolean {
   let editor = vscode.window.activeTextEditor;
-  if (!editor) {
-    return false; // No open text editor
-  }
-  if (editor !== undefined) {
+  if (editor) {
     let insertPosition: vscode.Position = editor.selection.active;
     editor.edit(edit => {
       edit.insert(insertPosition, text);
@@ -23,12 +20,7 @@ function registerCommand(context: vscode.ExtensionContext, char: string) {
     `js-touchbar.${char}`,
     () => {
       // The code you place here will be executed every time your command is executed
-
-      let editor = vscode.window.activeTextEditor;
-      if (!editor) {
-        return; // No open text editor
-      }
-      insertTextIntoDocument(char);
+      insertTextIntoEditor(char);
     }
   );
 
