@@ -24,7 +24,9 @@
     "url": "https://github.com/rjkokko/js-touchbar"
   },
   "activationEvents": [
-    "onCommand:js-touchbar.\\",
+    "onCommand:js-touchbar.{",
+    "onCommand:js-touchbar.}",
+    "onCommand:js-touchbar.$",
     "onCommand:js-touchbar.|"
   ],
   "main": "./out/extension.js",
