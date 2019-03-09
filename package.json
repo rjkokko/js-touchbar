@@ -24,8 +24,6 @@
     "url": "https://github.com/rjkokko/js-touchbar"
   },
   "activationEvents": [
-    "onCommand:js-touchbar.{",
-    "onCommand:js-touchbar.}",
     "onCommand:js-touchbar.\\",
     "onCommand:js-touchbar.|"
   ],
@@ -52,20 +50,24 @@
     "menus": {
       "touchBar": [
         {
-          "command": "js-touchbar.{",
-          "when": "inputFocus"
-        },
-        {
-          "command": "js-touchbar.}",
-          "when": "inputFocus"
-        },
-        {
           "command": "js-touchbar.\\",
-          "when": "inputFocus"
+          "when": "inputFocus",
+          "group": "js-touchbar@1"
         },
         {
           "command": "js-touchbar.|",
-          "when": "inputFocus"
+          "when": "inputFocus",
+          "group": "js-touchbar@2"
+        },
+        {
+          "command": "js-touchbar.{",
+          "when": "inputFocus",
+          "group": "js-touchbar@3"
+        },
+        {
+          "command": "js-touchbar.}",
+          "when": "inputFocus",
+          "group": "js-touchbar@4"
         }
       ]
     },
